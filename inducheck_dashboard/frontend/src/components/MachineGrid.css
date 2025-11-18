@@ -1,0 +1,32 @@
+.machine-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);  /* 10 columns */
+  grid-template-rows: repeat(5, 1fr);      /* 5 rows */
+  gap: 15px;
+  padding: 20px;
+  height: 62vh;
+  overflow: hidden;  /* Prevent scrolling on TV */
+}
+
+.no-data {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1600px) {
+  .machine-grid {
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto;
+  }
+}
+
+@media (min-width: 3840px) {
+  /* 4K support */
+  .machine-grid {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
