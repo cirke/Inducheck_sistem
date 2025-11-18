@@ -1,0 +1,21 @@
+.production-chart-container {
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 0 20px 20px 20px;
+  height: 28vh;
+}
+
+.chart-wrapper {
+  height: calc(100% - 10px);
+}
+
+.no-chart-data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 1.2rem;
+  color: #6b7280;
+}
